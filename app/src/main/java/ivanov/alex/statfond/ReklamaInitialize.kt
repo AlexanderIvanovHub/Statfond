@@ -16,7 +16,7 @@ import com.yandex.mobile.ads.kmp.banner.rememberBannerAdState
 import com.yandex.mobile.ads.kmp.common.AdRequest
 
 @Composable
-fun App() {
+fun App1() {
     //Запускаем корутину, key1 = Unit гарантирует, что код выполняется один раз
     LaunchedEffect(Unit) {
         YandexAds.initialize()

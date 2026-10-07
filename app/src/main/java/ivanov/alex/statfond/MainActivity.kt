@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             StatfondTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    App()
+                    App1()
                     LogoLoadingScreen()
                 //StickyBannerSlot("demo-banner-yandex",320.dp)
                     StickyBannerSlot("demo-banner-yandex")
