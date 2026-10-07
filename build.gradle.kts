@@ -3,5 +3,5 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.compose) apply false
     // Вместо alias(libs.plugins.kotlin.ksp) пишем напрямую ID и версию из TOML:
-    id("com.google.devtools.ksp") version "2.2.10-2.0.2" apply false  // Подключаем KSP вместо kapt
+    alias(libs.plugins.kotlin.ksp) apply false
 }

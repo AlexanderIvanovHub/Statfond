@@ -2,9 +2,10 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.hilt.android)
-    // Вместо kapt подключаем ksp
-    // Подключаем напрямую по ID без использования alias
-    id("com.google.devtools.ksp") version "2.2.10-2.0.2"
+// Вместо kapt подключаем ksp
+// Подключаем напрямую по ID без использования alias
+    alias(libs.plugins.kotlin.ksp)
+
 }
 
 android {
@@ -70,4 +71,5 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler) // Замените слово kapt(...) на ksp(...)
     implementation(libs.hilt.navigation.compose)
+
 }

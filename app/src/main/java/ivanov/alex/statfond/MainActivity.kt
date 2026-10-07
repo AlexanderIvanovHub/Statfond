@@ -13,12 +13,14 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import dagger.hilt.android.AndroidEntryPoint
 import ivanov.alex.statfond.presentation.AdTestingScreen
 import ivanov.alex.statfond.presentation.LogoLoadingScreen
 import ivanov.alex.statfond.presentation.MyGameScreen
 import ivanov.alex.statfond.presentation.rememberInterstitialAdManager
 import ivanov.alex.statfond.ui.theme.StatfondTheme
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
